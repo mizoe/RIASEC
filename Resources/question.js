@@ -1,4 +1,5 @@
-var lastQuestion = 41;
+//var lastQuestion = 41;
+var lastQuestion = 5;
 function saveAnswer(answer, questionNumber){
 //	Ti.API.info('questionNumber: ', questionNumber);
 //	Ti.API.info('answer: ', answer);

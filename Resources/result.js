@@ -57,7 +57,8 @@ var graphSize = Ti.Platform.displayCaps.platformWidth;
 if(graphSize > 600){
 	graphSize = 600;
 }
-var resultUrl = "http://www.july.co.jp/~mz/tmp/result.html?w="+graphSize
+//var resultUrl = "http://www.july.co.jp/~mz/tmp/result.html?w="+graphSize
+var resultUrl = "result.html?w="+graphSize
 	+"&R="+result['R']
 	+"&I="+result['I']
 	+"&A="+result['A']
@@ -66,7 +67,6 @@ var resultUrl = "http://www.july.co.jp/~mz/tmp/result.html?w="+graphSize
 	+"&C="+result['C'];
 Ti.API.info('URL: ', resultUrl);
 webview.url = resultUrl;
-//webview.url = "http://www.july.co.jp/";
 var row = Ti.UI.createTableViewRow({height: graphSize});
 row.add(webview);
 tableView.appendRow(row);
