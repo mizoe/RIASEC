@@ -13,6 +13,6 @@ if(Ti.Platform.osname == "mobileweb"){
 }
 tab = Ti.UI.createTab({window: mainMenu, width: graphSize});
  
-tg = Ti.UI.createTabGroup();
+tg = Ti.UI.createTabGroup({width: graphSize});
 tg.addTab(tab);
 tg.open();
