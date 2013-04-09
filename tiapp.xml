@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">SEuMEaZ1NXf79pFjuYPpLkiIGD7Kep9Y</property>
+    <property name="acs-oauth-key-production" type="string">o2zDDgzwEFUaEqFwxXPSVrvO9KhNUfTi</property>
+    <property name="acs-api-key-production" type="string">MLpX3tRQlGzYTr0vpJGirFaBatCmlc0L</property>
+    <property name="acs-oauth-secret-development" type="string">qpRqZ08oX39btVh4fYPzYlZG0DmiPrq7</property>
+    <property name="acs-oauth-key-development" type="string">00Y6vgWThbZEAdmRQ0JPW5ueczKQV3Gl</property>
+    <property name="acs-api-key-development" type="string">YepCsya8s3E1L3T3YTYRlZ0aaCsHWDeo</property>
+    <id>jp.co.july.mz.RadioButton1</id>
+    <name>RIASEC</name>
+    <version>1.1</version>
+    <publisher>mz</publisher>
+    <url>http://www.july.co.jp/</url>
+    <description>RIASECは米国の心理学者であるジョン・L・ホランドが提唱した理論です。自分の性格特性と一致する環境で仕事をすることで、より安定した職業選択ができ、満足度が高まるというものです。
+
+http://en.wikipedia.org/wiki/Holland_Codes
+
+http://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BBL%E3%83%BB%E3%83%9B%E3%83%A9%E3%83%B3%E3%83%89</description>
+    <copyright>2013 by July.co.jp</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>3e3a929a-adc9-47aa-8be5-2fa6d3129683</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="blackberry">false</target>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+    </deployment-targets>
+    <sdk-version>3.0.2.GA</sdk-version>
+</ti:app>
