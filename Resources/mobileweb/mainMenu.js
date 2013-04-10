@@ -85,6 +85,9 @@ var doitButton = Ti.UI.createButton({
 	width: 'auto'
 });
 doitButton.addEventListener("click", function(){
+	if(Ti.App.Properties.getInt('questionNumber') == null){
+		propertiesInitialize();
+	}
 	if(Ti.App.Properties.getInt('questionNumber') < 43){
 	    Ti.UI.currentTab.open(Ti.UI.createWindow({url: "question.js"}));
 	}else{
