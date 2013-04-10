@@ -81,16 +81,17 @@ var doitButton = Ti.UI.createButton({
 	separatorColor : '#000',
 	title: 'リセット',
 	font:{fontSize:9},
-	width: 'auto'
+    touchEnabled : true,
+    width: 'auto'
 });
 doitButton.addEventListener("click", function(){
-	Ti.API.info('properties initializing ...');
+//	Ti.API.info('properties initializing ...');
 	Ti.App.Properties.setInt('questionNumber', 0);
 	var answers = new Array();
 	answers[0] = 0;
 	Ti.App.Properties.setList('answers', answers);
-	Ti.API.info('properties initializing complete.');
-	Ti.UI.currentTab.open(Ti.UI.createWindow({url: "question.js"}));
+//	Ti.API.info('properties initializing complete.');
+	Ti.UI.currentTab.open(Ti.UI.createWindow({url: "mainMenu.js"}));
 });
 row.add(doitButton);
 tableView.appendRow(row);
